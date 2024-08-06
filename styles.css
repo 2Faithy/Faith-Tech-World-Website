@@ -649,6 +649,12 @@ button:hover {
     color: #1e90ff; 
 }
 
+#msg {
+    color: #61b752;
+    margin-bottom: -15px;
+    display: block;
+}
+
 /* Privacy Note */
 .privacy-note {
     margin-top: 20px;
@@ -775,4 +781,34 @@ button:hover {
     .footer__container {
         padding: 1rem 0;
     }
+}
+
+#services {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.service-card {
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+p i {
+    color: #ff004f;
+    margin-right: 5px;
 }
