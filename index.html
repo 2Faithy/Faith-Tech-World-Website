@@ -6,34 +6,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <title>Faith Tech Solution</title>
+    <title>Faith Onwuemeri | Web Developer & Tech Enthusiast</title>
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="navbar__container">
-                <a href="#home" id="navbar__logo"><i class="fas fa-heart"></i> FAITH ONWUEMERI</a>
-                <div class="navbar__toggle" id="mobile-menu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-                <ul class="navbar__menu">
-                    <li class="navbar__item"><a href="#home" class="navbar__links">HOME</a></li>
-                    <li class="navbar__item"><a href="#about" class="navbar__links">ABOUT ME</a></li>
-                    <li class="navbar__item"><a href="#resume" class="navbar__links">RESUME</a></li>
-                    <li class="navbar__item"><a href="#contact" class="navbar__links">CONTACT</a></li>
-                    <li class="navbar__icon"><a href="#camera" class="navbar__links"><i class="fas fa-camera"></i></a></li>
-                </ul>
+            <div class="logo">Faith Onwuemeri</div>
+            <div class="menu-toggle" id="menu-toggle">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
             </div>
-        </nav>
+            <div class="navbar-menu" id="navbar-menu">
+              <a href="#home">Home</a>
+              <a href="#about">About</a>
+              <a href="#resume">Resume</a>
+              <a href="#contact">Contact</a>
+            </div>
+          </nav>
     </header>
     
     <main>
         <section id="home" class="main">
             <div class="main__container">
                 <div class="main__content">
-                    <h1>Faith Ngozi</h1>
+                    <h1>Faith</h1>
                     <h2>Onwuemeri</h2>
                     <p>HI!! LOOKING FOR A WEB DEVELOPER?</p>
                     <button class="main__btn"><a href="#about">LEARN MORE</a></button>
@@ -255,13 +252,16 @@
     
     <script src="scripts.js"></script>
     <script>
-        const mobileMenu = document.getElementById('mobile-menu');
-        const navbarMenu = document.querySelector('.navbar__menu');
-
-        mobileMenu.addEventListener('click', function() {
-            navbarMenu.classList.toggle('active');
+    document.addEventListener('DOMContentLoaded', function() {
+        const menuToggle = document.getElementById('menu-toggle');
+        const navbarMenu = document.getElementById('navbar-menu');
+      
+        menuToggle.addEventListener('click', function() {
+          navbarMenu.classList.toggle('active');
         });
+      });
     </script>
+      
     
     <script>
         const scriptURL = 'https://script.google.com/macros/s/AKfycbziowPJkXSR9rBRQw8Cz8rOu77p81_ycZNVpYPh5FSkCa2oOvp4zBakASy_YkJWDMPsZA/exec'
@@ -283,4 +283,3 @@
       </script>
 </body>
 </html>
-
